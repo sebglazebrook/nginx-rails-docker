@@ -4,4 +4,4 @@ ADD etc/nginx/sites-available/ /etc/nginx/sites-available/
 ADD etc/nginx/nginx.conf /etc/nginx/nginx.conf
 ADD usr/local/bin/start-nginx /usr/local/bin/start-nginx
 WORKDIR /etc/nginx
-CMD /etc/init.d/nginx start
+CMD /usr/local/bin/start-nginx
